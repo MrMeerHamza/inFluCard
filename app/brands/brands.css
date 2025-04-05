@@ -1,0 +1,85 @@
+.brands-container {
+  width: 100vw;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #5a38e3, #bc46d1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  padding-bottom: 60px; /* Space for footer */
+  margin: auto;
+}
+
+.banner {
+  width: 90%;
+  max-height: 180px;
+  overflow: hidden;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.categories {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.category {
+  background: #27214c;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.category:hover {
+  background: #1f6449;
+}
+
+.brands-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding: 10px;
+  /* margin: auto; */
+}
+
+.brand-card {
+  background: #27214c;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.brand-logo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cashback {
+  display: block;
+  font-size: 12px;
+  color: #ff66c4;
+  margin: 5px 0;
+}
+
+h3 {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 12px;
+  color: #ccc;
+}

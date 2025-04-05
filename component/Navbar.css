@@ -1,0 +1,34 @@
+.navbar {
+  width: 30vw; /* Set width to 30% of viewport */
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%); /* Center the navbar */
+  /* height: 50px; */
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  background-color: black;
+  color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  flex-grow: 1; /* Pushes the icons to the right */
+  text-align: left; /* Ensures the text stays on the left */
+  cursor: pointer;
+}
+
+.icons {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.icons ion-icon {
+  font-size: 22px;
+  cursor: pointer;
+}

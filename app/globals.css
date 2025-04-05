@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--foreground);
+  background: linear-gradient(45deg, #2b2640, #4a2451);
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden; /* Prevents unwanted scrolling */
+}
+
+.layout {
+  width: 30vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.navbar, .footer {
+  width: 30vw;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  top: 0;
+  height: 60px;
+}
+
+.footer {
+  bottom: 0;
+  height: 60px;
+}
+
+.main-content {
+  flex-grow: 1; /* Ensures it fills available space */
+  width: 100%;
+  padding-top: 60px; /* Prevents content from overlapping the navbar */
+  padding-bottom: 60px; /* Prevents content from overlapping the footer */
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Hide scrollbar for Chrome, Safari, and Edge */
+::-webkit-scrollbar {
+  width: 4px; /* Very thin scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Makes the track invisible */
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2); /* Lightly visible scrollbar */
+  border-radius: 10px;
+}
+
+/* Hide scrollbar completely */
+body {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer and Edge */
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome, Safari, and Edge */
+}

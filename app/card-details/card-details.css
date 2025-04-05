@@ -1,0 +1,79 @@
+.card-details-container {
+  background: linear-gradient(to bottom, #19002d, #11001f);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  margin: auto;
+}
+
+.card-detail {
+  width: 90%;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.card-detail-row {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+}
+
+.half-width {
+  width: 48%;
+}
+
+.label {
+  font-size: 14px;
+  color: #aaa;
+}
+
+.value {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.copy-btn {
+  font-size: 20px;
+  cursor: pointer;
+  color: #ff66b2;
+  transition: 0.3s;
+}
+
+.copy-btn:hover {
+  color: #ff33a5;
+}
+
+/* CVV Box Styling */
+.cvv-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.cvv-box span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
+.card-image {
+  margin-top: 20px;
+}
+
+.card-image img {
+  /* width: 250px; */
+  height: 325px;
+  border-radius: 15px;
+}
