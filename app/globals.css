@@ -28,13 +28,14 @@ html, body {
   align-items: center;
   justify-content: center;
   color: var(--foreground);
-  background: linear-gradient(45deg, #2b2640, #4a2451);
+  /* background: linear-gradient(45deg, #2b2640, #4a2451); */
+  background: #0b6a6a;
   font-family: Arial, Helvetica, sans-serif;
   overflow: hidden; /* Prevents unwanted scrolling */
 }
 
 .layout {
-  width: 30vw;
+  width: 25vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -42,11 +43,11 @@ html, body {
 }
 
 .navbar, .footer {
-  width: 30vw;
+  width: 25vw;
   position: fixed;
   left: 50%;
   transform: translateX(-50%);
-  background-color: black;
+  background-color: rgb(24, 24, 24);
   color: white;
   display: flex;
   justify-content: center;
@@ -56,11 +57,13 @@ html, body {
 .navbar {
   top: 0;
   height: 60px;
+  border-bottom: 1px solid white;
 }
 
 .footer {
   bottom: 0;
   height: 60px;
+  border-top: 1px solid white;
 }
 
 .main-content {
@@ -76,7 +79,7 @@ html, body {
 
 /* Hide scrollbar for Chrome, Safari, and Edge */
 ::-webkit-scrollbar {
-  width: 4px; /* Very thin scrollbar */
+  width: 0px; /* Very thin scrollbar */
 }
 
 ::-webkit-scrollbar-track {

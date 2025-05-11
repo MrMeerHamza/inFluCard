@@ -5,13 +5,13 @@
   justify-content: center;
   width: 100vw;
   min-height: 100%;
-  background-color: #121212;
+  background-color: #333333;
   color: white;
   margin: auto;
 }
 
 .transactions-content {
-  width: 30vw; /* Match Home Page */
+  width: 25vw; /* Match Home Page */
   min-height: calc(100vh - var(--navbar-height) - var(--footer-height)); /* Remaining height */
   display: flex;
   flex-direction: column;
@@ -34,7 +34,7 @@ h2 {
 }
 
 .filter-buttons button {
-  background-color: gray;
+  background-color: #2200ff;
   border: none;
   padding: 8px 16px;
   border-radius: 20px;
@@ -44,11 +44,11 @@ h2 {
 }
 
 .filter-buttons .active {
-  background-color: pink;
+  background-color: #2200ff;
 }
 
 .filter-buttons button:hover {
-  background-color: darkgray;
+  background-color: #1f6449;
 }
 
 .transactions-list {
@@ -58,7 +58,7 @@ h2 {
 
 .transaction-item {
   padding: 12px;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #ffffff;
   display: flex;
   justify-content: space-between;
   align-items: center;

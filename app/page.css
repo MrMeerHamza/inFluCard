@@ -1,11 +1,11 @@
 .home-container {
-  width: 30vw;
+  width: 25vw;
   /* height: calc(100vh - 120px); */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #121212;
+  background-color: #333333;
   color: white;
   margin: auto;
 }

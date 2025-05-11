@@ -1,5 +1,5 @@
-.favourites-container {
-  width: 30vw;
+/* .favourites-container {
+  width: 25vw;
   min-height: 100vh;
   margin: auto;
   padding: 20px;
@@ -10,7 +10,7 @@
   align-items: center;
 }
 
-/* Header */
+
 .favourites-header {
   width: 100%;
   display: flex;
@@ -33,21 +33,21 @@
   color: black;
 }
 
-/* Grid View */
+
 .grid-view {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 15px;
 }
 
-/* List View */
+
 .list-view {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-/* Favourite Card */
+
 .fav-card {
   background: linear-gradient(135deg, #622774, #a857b6);
   padding: 15px;
@@ -90,6 +90,78 @@
   border-radius: 20px;
   color: white;
   font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+*/
+
+.favourites-container {
+  width: 25vw;
+  min-height: 100vh;
+  margin: auto;
+  padding: 20px;
+  background: #333333;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.favourites-header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.favourites-header h2 {
+  font-size: 30px;
+}
+
+.list-view {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 90%;
+}
+
+.fav-card {
+  background: #fffdfd40;
+  padding: 15px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+}
+
+.fav-card img {
+  width: 125px;
+  height: 125px;
+  border-radius: 10px;
+}
+
+.fav-info {
+  flex-grow: 1;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.fav-info h3 {
+  font-size: 25px;
+  margin: 0;
+}
+
+.remove-btn {
+  background: red;
+  border: none;
+  padding: 10px 15px;
+  margin: 10px;
+  border-radius: 10px;
+  color: white;
+  font-size: 15px;
   font-weight: bold;
   cursor: pointer;
 }
